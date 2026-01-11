@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 20:04:04 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/10 20:54:28 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/11 01:39:05 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,35 @@
 ClapTrap::ClapTrap(std::string name) : _hit_points(10), _energy_points(10), _attack_damage(0)
 {
     this->setName(name);
-    std::cout << "Default constructor " << this->getName() << " called\n";
+    std::cout << "Default ClapTrap constructor " << this->getName() << " called\n";
+}
+
+ClapTrap::ClapTrap(void) : _hit_points(10), _energy_points(10), _attack_damage(0)
+{
+    std::cout << "Default ClapTrap constructor called\n";
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "Destructor " << this->getName() << " called\n";
+    std::cout << "Destructor ClapTrap " << this->getName() << " called\n";
+}
+
+ClapTrap::ClapTrap(const ClapTrap &copy)
+{
+	*this = copy;
+	std::cout << "Copy Constructor called of ClapTrap\n";
+}
+
+ClapTrap& ClapTrap::operator=(const ClapTrap &other)
+{
+	if (this != &other)
+    {
+        this->_name = other._name;
+        this->_attack_damage = other._attack_damage;
+        this->_energy_points = other._energy_points;
+        this->_hit_points = other._hit_points;
+    }
+	return (*this);
 }
 
 std::string ClapTrap::getName(void)

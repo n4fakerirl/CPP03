@@ -6,27 +6,27 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 20:23:36 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/11 01:06:09 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/11 01:39:56 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ScavTrap.hpp"
 
-void ScavTrap::printscav(void)
-{
-    std::cout << "-    ScavTrap  -" << std::endl;
-    std::cout << "- HIT POINTS " << this->_hit_points << "\n";
-    std::cout << "- ENERGY POINTS " << this->_energy_points << "\n";
-    std::cout << "- ATTACK DAMAGE " << this->_attack_damage << "\n";
-}
+// void ScavTrap::printscav(void)
+// {
+//     std::cout << "-    ScavTrap  -" << std::endl;
+//     std::cout << "- HIT POINTS " << this->_hit_points << "\n";
+//     std::cout << "- ENERGY POINTS " << this->_energy_points << "\n";
+//     std::cout << "- ATTACK DAMAGE " << this->_attack_damage << "\n";
+// }
 
-void ClapTrap::printclap(void)
-{
-    std::cout << "-    ClapTrap  -" << std::endl;
-    std::cout << "- HIT POINTS " << this->_hit_points << "\n";
-    std::cout << "- ENERGY POINTS " << this->_energy_points << "\n";
-    std::cout << "- ATTACK DAMAGE " << this->_attack_damage << "\n";
-}
+// void ClapTrap::printclap(void)
+// {
+//     std::cout << "-    ClapTrap  -" << std::endl;
+//     std::cout << "- HIT POINTS " << this->_hit_points << "\n";
+//     std::cout << "- ENERGY POINTS " << this->_energy_points << "\n";
+//     std::cout << "- ATTACK DAMAGE " << this->_attack_damage << "\n";
+// }
 
 int main(void)
 {
@@ -34,9 +34,9 @@ int main(void)
     ClapTrap a("Nova");
     ScavTrap test("Molly");
 
-    std::cout << "===== START STATS =====" << std::endl;
-    a.printclap();
-    test.printscav();
+    // std::cout << "===== START STATS =====" << std::endl;
+    // a.printclap();
+    // test.printscav();
 
     std::cout << "\n===== ATTACK =====" << std::endl;
     a.attack("Enemy");

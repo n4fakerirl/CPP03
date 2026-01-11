@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 19:58:13 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/10 20:09:34 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/01/11 01:39:21 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,10 @@ class ClapTrap
     
     public:
     ClapTrap(std::string name);
+    ClapTrap();
     ~ClapTrap();
+    ClapTrap(const ClapTrap &copy);
+    ClapTrap& operator=(const ClapTrap &other);
     std::string getName(void);
     void setName(std::string name);
     void attack(const std::string& target);
