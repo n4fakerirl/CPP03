@@ -6,11 +6,11 @@
 #    By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/10 19:55:21 by ocviller          #+#    #+#              #
-#    Updated: 2026/01/11 01:06:29 by ocviller         ###   ########.fr        #
+#    Updated: 2026/01/30 16:04:03 by ocviller         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-CC = g++
+CC = c++
 CFLAGS = -std=c++98 -Wall -Werror -Wextra
 NAME = scavtrap
 SRC = main.cpp ClapTrap.cpp ScavTrap.cpp
