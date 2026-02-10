@@ -6,7 +6,7 @@
 /*   By: ocviller <ocviller@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/10 20:23:36 by ocviller          #+#    #+#             */
-/*   Updated: 2026/01/11 01:39:56 by ocviller         ###   ########.fr       */
+/*   Updated: 2026/02/10 13:31:52 by ocviller         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,17 +50,17 @@ int main(void)
     a.beRepaired(5);
     test.beRepaired(5);
 
-    std::cout << "\n===== ENERGY DRAIN =====" << std::endl;
-    ClapTrap b("Tired");
+    std::cout << "\n===== ENERGY =====" << std::endl;
+    ClapTrap b("Energy");
     for (int i = 0; i < 11; i++)
-        b.attack("air");
-    std::cout << "\n===== DEAD CLAPTRAP =====" << std::endl;
+        b.attack("Nova");
+    std::cout << "\n===== DEAD =====" << std::endl;
     ClapTrap c("Dead");
     c.takeDamage(10);
-    c.attack("anyone");
+    c.attack("Nova");
     c.beRepaired(5);
 
-    std::cout << "\n===== SPECIAL ABILITY =====" << std::endl;
+    std::cout << "\n===== SPECIAL =====" << std::endl;
     test.guardGate();
 
     std::cout << "\n===== DESTRUCTORS =====" << std::endl;
